@@ -1,0 +1,30 @@
+.row{
+    margin: 10px auto;
+    width: 1080px;
+}
+.txtsearch{
+    position: absolute;
+    top:1px;
+    width: 400px;
+}
+.btnsearch{   
+    position: absolute;
+    top:2px;
+    left: 420px;
+}
+.bg-grey {
+    background-color: #3f3f3fe1 !important;
+}
+.carousel-inner img {
+    width: 1080px;
+    height: 300px;
+}
+.wrap-border-content-center img{
+    width: 330px;
+    height: 340px;
+}
+.img-product-home{
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+}
