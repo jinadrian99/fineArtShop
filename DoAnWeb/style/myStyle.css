@@ -28,3 +28,7 @@
     height: 330px;
     overflow: hidden;
 }
+.wrap-addcard span:hover{
+    color: crimson;
+    font-weight: bold;
+}
