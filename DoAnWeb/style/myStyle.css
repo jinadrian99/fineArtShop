@@ -6,6 +6,15 @@
     margin: 10px auto;
     width: 1080px;
 }
+.nav-item{
+    margin: 0 23px;
+}
+.nav-item a{
+    transition: 1.25s;
+}
+.nav-item a:hover{
+    color: crimson;
+}
 .txtsearch{
     position: absolute;
     top:1px;
@@ -23,31 +32,45 @@
     width: 1080px;
     height: 300px;
 }
+.wrap-border-content-center{
+    position: relative;
+    left:15px;
+    width: 300px;
+}
 .img-product{
-    width: 330px;
-    height: 330px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     vertical-align: middle;
     border: 8px solid #ebebeb;
 }
 .img-product img{
-    width: 320px;
-    height: 320px;
+    width: 285px;
+    height: 285px;
+    transition: 1s;
 }
 .img-product img:hover{
     position: relative;
     left:-15px;
     top:-15px;
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
 }
 .wrap-addcard h5, .wrap-addcard span{
     color: #000;
+    transition: 0.5s;
 }
 .wrap-addcard span:hover, .wrap-addcard h5:hover{
     color: crimson;
     font-weight: bold;
 }
-.btn-add-item a:hover{
+.btn-add-item
+ a:hover{
     background: dimgray;
+}
+.breadcrumb-item a{
+    transition: 1.5s;
+}
+.breadcrumb-item a:hover{
+    color: crimson;
 }
