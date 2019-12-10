@@ -1,3 +1,22 @@
+
+/** Khung thanh srollbar */
+::-webkit-scrollbar
+{
+    background: #fff;
+    width: 9px;
+}	
+
+/** Thanh srollbar */
+::-webkit-scrollbar-thumb
+{
+    background: #fff;
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background: #007bffbd;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -32,6 +51,11 @@
     width: 1080px;
     height: 250px;
 }
+.container{
+    position: relative;
+    left:-15px;
+    top:-15px;
+}
 .wrap-border-content-center{
     position: relative;
     left:15px;
@@ -44,28 +68,53 @@
     vertical-align: middle;
     border: 8px solid #ebebeb;
 }
+.img-product:hover{
+    border: 8px solid #007bffab;
+}
 .img-product img{
     width: 285px;
     height: 285px;
     transition: 1s;
 }
 .img-product img:hover{
-    position: relative;
+    /* position: relative;
     left:-15px;
     top:-15px;
     width: 320px;
-    height: 320px;
+    height: 320px; */
 }
+.row-Art-Tools{
+    height: 380px;
+    position: relative;
+    top: 8px;
+    bottom: 8px;
+}
+
 .wrap-addcard h5, .wrap-addcard span{
     color: #000;
     transition: 0.5s;
 }
+.wrap-addcard span{
+    font-weight: 600;
+}
+.sold-out-item{
+    color: #fff;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 100px;
+}
+.sold-out-item:hover{
+    color: black;
+    line-height: 25px;
+    background-color: crimson;
+    opacity: 0.95;
+    border: 2.5px solid #16171A;
+}
 .wrap-addcard span:hover, .wrap-addcard h5:hover{
     color: crimson;
-    font-weight: bold;
 }
-.btn-add-item
- a:hover{
+.btn-add-item a:hover{
     background: dimgray;
 }
 .breadcrumb-item a{
