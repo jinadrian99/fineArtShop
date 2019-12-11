@@ -9,7 +9,7 @@
 /** Thanh srollbar */
 ::-webkit-scrollbar-thumb
 {
-    background: #fff;
+    background: #3f3f3f15;
     border-radius: 10px; 
 }
 ::-webkit-scrollbar-thumb:hover
@@ -44,6 +44,10 @@
     top:2px;
     left: 420px;
 }
+.btnsearch img{
+    width: 33px;
+    height: 33px;
+}
 .bg-grey {
     background-color: #3f3f3fe1 !important;
 }
@@ -67,6 +71,7 @@
     overflow: hidden;
     vertical-align: middle;
     border: 8px solid #ebebeb;
+    transition: 0.65s;
 }
 .img-product:hover{
     border: 8px solid #007bffab;
@@ -122,4 +127,8 @@
 }
 .breadcrumb-item a:hover{
     color: crimson;
+}
+/* Blog */
+.mb-24 {
+    margin-bottom: 1.5rem;
 }
