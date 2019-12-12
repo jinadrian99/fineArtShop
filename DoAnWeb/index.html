@@ -45,7 +45,7 @@
                        <img src="images/iconLogin01.png" alt=""width="30" height="30"> Đăng nhập
                     </button>
                     
-                    <button class="btn rounded btn-light">
+                    <button type="button" class="btn rounded btn-light" data-toggle="modal" data-target="#ModalShopping">
                         <img src="images/iconBuy01.png" alt=""width="30" height="30"> Giỏ hàng
                     </button>
                 </div>
@@ -119,10 +119,147 @@
                         </div>
                     </div>
                 </form>
+                <form>
+                    <div class="modal fade" id="ModalShopping" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="width: 1000px; position: relative; left:-50%">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">GIỎ HÀNG CỦA TÔI</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>                                
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-row row">
+                                        <div class="col-6">      
+                                            <!-- Item 1 -->
+                                            <div class="card mb-24 mt-24 bg-light">
+                                                <div class="cart-title">
+                                                    <h6 class="float-left">Số lượng SP: <small>(1 item)</small></h6>
+                                                    <h6 class="total-pay float-right">Tổng cộng: <span>1,619,000₫</span></h6>
+                                                    <br>
+                                                    <hr class="bg-light">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded" src="images/spbvdt01.PNG" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <h5>Wacom Intuos Draw 490</h5>
+                                                            <span>1,619,000₫</span>
+                                                            <i class="discount-off">
+                                                                <u>2,698,300đ</u>
+                                                                40% OFF
+                                                            </i>
+                                                            <hr class="bg-light">
+                                                            <div class="product-remove">
+                                                                <p class="float-left"><a href="">Remove</a></p>
+                                                                <p class="float-right"><a href="">Move to WishList</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>         
+                                            <!-- Item 2 -->        
+                                            <div class="card mb-24 mt-24 bg-light">
+                                                <div class="cart-title">
+                                                    <h6 class="float-left">Số lượng SP: <small>(1 item)</small></h6>
+                                                    <h6 class="total-pay float-right">Tổng cộng: <span>749,000₫</span></h6>
+                                                    <br>
+                                                    <hr class="bg-light">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded" src="images/spchi01.PNG" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <h5>Pentel Super Multi 8</h5>
+                                                            <span>749,000₫</span>
+                                                            <i class="discount-off">
+                                                                <u>1,248,300đ</u>
+                                                                40% OFF
+                                                            </i>
+                                                            <hr class="bg-light">
+                                                            <div class="product-remove">
+                                                                <p class="float-left"><a href="">Remove</a></p>
+                                                                <p class="float-right"><a href="">Move to WishList</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>        
+                                            <!-- Item 3 -->         
+                                            <div class="card mb-24 mt-24 bg-light">
+                                                <div class="cart-title">
+                                                    <h6 class="float-left">Số lượng SP: <small>(5 item)</small></h6>
+                                                    <h6 class="total-pay float-right">Tổng cộng: <span>325,000₫</span></h6>
+                                                    <br>
+                                                    <hr class="bg-light">
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-2">
+                                                            <a href="#">
+                                                                <img class="img-fluid rounded" src="images/spmau01.PNG" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <h5>Màu nước Paul Rubens (lẻ)</h5>
+                                                            <span>65,000đ</span>
+                                                            <hr class="bg-light">
+                                                            <div class="product-remove">
+                                                                <p class="float-left"><a href="">Remove</a></p>
+                                                                <p class="float-right"><a href="">Move to WishList</a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="cart-bill rounded mt-24 bg-light border">
+                                                <h5>Chi tiết đặt hàng:</h5>
+                                                <hr>
+                                                <p>Tổng tiền SP:
+                                                    <span class="float-right">2,693,000đ</span>
+                                                </p>
+                                                <p>Tiền Shipping:
+                                                    <span class="float-right text-success">FREE</span>
+                                                </p>
+                                                <p>Thuế: 
+                                                    <span class="float-right text-primary">10%</span>
+                                                </p>
+                                                <hr>
+                                                <i class="text-info"> 
+                                                    Bạn đã tiết kiệm được: 1,578,600đ
+                                                </i>
+                                                <hr>
+                                                <h5 style="font-size: 17px; font-weight: 600;">Tổng thành tiền: 
+                                                    <span class="float-right">2,962,300đ</span></h5>
+                                                <hr>
+                                                <div class="checkout-btn mt-4">
+                                                    <button type="button" class="btn btn-primary btn-block">THANH TOÁN NGAY &gt;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <br>                
-            <marquee behavior="" direction="">Chào mừng bạn đến với Shop Họa Cụ Adrian Fine Art. Chúc bạn chọn được họa cụ ưng ý.</marquee>
-            <br>
+        </div>
+        <div class="row">               
+            <marquee class="col-12" behavior="" direction="">Chào mừng bạn đến với Shop Họa Cụ Adrian Fine Art. Chúc bạn chọn được họa cụ ưng ý.</marquee>
+        </div>
+        <div class="row">
             <!-- menu -->
             <nav class="navbar navbar-expand-sm">
                 <ul class="navbar-nav">
@@ -179,6 +316,8 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="row">
             <img  style="margin: 0;" class="rounded" src="images/bannerFreeShip01.PNG" width="100%">
         </div>
         <!-- slider images -->
@@ -250,6 +389,10 @@
                             <div class="wrap-addcard">
                                 <h5>Wacom Intuos Draw 490</h5>
                                 <span>1,619,000₫</span>
+                                <i class="discount-off">
+                                    <u>2,698,300đ</u>
+                                    40% OFF
+                                </i>
                                 <div class="btn-add-item float-right">
                                     <a class="btn-sm btn-primary" href="#" role="button"> 
                                         <img src="images/shopping-basket.png" width="35" height="35">
@@ -270,6 +413,10 @@
                             <div class="wrap-addcard">
                                 <h5>Pentel Super Multi 8</h5>
                                 <span>749,000₫</span>
+                                <i class="discount-off">
+                                    <u>1,248,300đ</u>
+                                    40% OFF
+                                </i>
                                 <div class="btn-add-item float-right">
                                     <a class="btn-sm btn-primary" href="#" role="button"> 
                                         <img src="images/shopping-basket.png" width="35" height="35">
@@ -289,7 +436,11 @@
                             </div>
                             <div class="wrap-addcard">
                                 <h5>Giấy Baohong 200gsm</h5>
-                                <span>19,000₫</span>
+                                <span>11,400₫</span>
+                                <i class="discount-off">
+                                    <u>19,000đ</u>
+                                    40% OFF
+                                </i>
                                 <div class="btn-add-item float-right">
                                     <a class="btn-sm btn-primary" href="#" role="button"> 
                                         <img src="images/shopping-basket.png" width="35" height="35">
@@ -311,7 +462,11 @@
                             </div>
                             <div class="wrap-addcard">
                                 <h5>Bút đi nét Multiliner (9 cây)</h5>
-                                <span>579,000₫</span>
+                                <span>347,400₫</span>
+                                <i class="discount-off">
+                                    <u>579,000đ</u>
+                                    40% OFF
+                                </i>
                                 <div class="btn-add-item float-right">
                                     <a class="btn-sm btn-primary" href="#" role="button"> 
                                         <img src="images/shopping-basket.png" width="35" height="35">
@@ -331,7 +486,7 @@
                             </div>
                             <div class="wrap-addcard">
                                 <h5>Màu nước Paul Rubens (lẻ)</h5>
-                                <span>39,000₫</span>
+                                <span>65,000đ</span>
                                 <div class="btn-add-item float-right">
                                     <a class="btn-sm btn-primary" href="#" role="button"> 
                                         <img src="images/shopping-basket.png" width="35" height="35">
@@ -351,7 +506,11 @@
                             </div>
                             <div class="wrap-addcard">
                                 <h5>Màu nước Sennelier Aquarelle</h5>
-                                <span>6,080,000₫</span>
+                                <span>3,648,000₫</span>
+                                <i class="discount-off">
+                                    <u>6,080,000đ</u>
+                                    40% OFF
+                                </i>
                                 <div class="btn-add-item float-right">
                                     <a class="btn-sm btn-primary" href="#" role="button"> 
                                         <img src="images/shopping-basket.png" width="35" height="35">
@@ -373,7 +532,11 @@
                             </div>
                             <div class="wrap-addcard">
                                 <h5>Wacom Intuos Pro S460</h5>
-                                <span>6,600,000₫</span>
+                                <span>3,960,000₫</span>
+                                <i class="discount-off">
+                                    <u>6,600,000đ</u>
+                                    40% OFF
+                                </i>
                                 <div class="btn-add-item float-right">
                                     <a class="btn-sm btn-primary" href="#" role="button"> 
                                         <img src="images/shopping-basket.png" width="35" height="35">

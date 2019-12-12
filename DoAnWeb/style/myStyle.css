@@ -21,8 +21,13 @@
     margin: 0;
     padding: 0;
 }
+.row:first-child{
+    margin-top: 10px;
+}
 .row{
-    margin: 10px auto;
+    margin:0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
     width: 1080px;
 }
 .row-shadow{
@@ -52,6 +57,10 @@
     width: 33px;
     height: 33px;
 }
+#ModalShopping .modal-row{
+    position: relative;
+    left: 2rem;
+}
 .bg-grey {
     background-color: #3f3f3fe1 !important;
 }
@@ -60,6 +69,7 @@
     height: 250px;
 }
 .container{
+    margin: 20px 0 0 0;
     position: relative;
     left:-15px;
     top:-15px;
@@ -124,6 +134,13 @@
 .wrap-addcard span:hover, .wrap-addcard h5:hover{
     color: crimson;
 }
+.discount-off{
+    color: #08ba0d;
+}
+.discount-off u{
+    color: rgba(0, 0, 0, .4);
+    text-decoration: line-through;
+}
 .btn-add-item a:hover{
     background: dimgray;
 }
@@ -133,7 +150,22 @@
 .breadcrumb-item a:hover{
     color: crimson;
 }
-/* Blog */
 .mb-24 {
     margin-bottom: 1.5rem;
+}
+.mt-24 {
+    margin-top: 1.5rem;
+}
+.cart-title {
+    padding:10px;
+}
+.cart-title hr{
+    margin:0;
+    padding:0;
+}
+#ModalShopping .card-body{
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
+.cart-bill{
+    padding: 20px 30px 30px 30px;
 }
